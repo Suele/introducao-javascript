@@ -1,7 +1,7 @@
 <script>
 
 const numeros = [11, 21, 33, 44, 55, 66, 77, 88, 99, 100];
-let posicao = 9;
+/*let posicao = 9;
 
 console.log("Todos os elementos: ");
 numeros.forEach(function(numero){
@@ -9,5 +9,12 @@ numeros.forEach(function(numero){
 });
 
 console.log("Elemento selecionado: " + numeros[posicao]);
+*/
+
+for (let i = 0; i < numeros.length; i++){
+
+  console.log(numeros[8]);
+  break;
+}
 
 </script>

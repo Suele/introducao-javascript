@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Números de um a Cem</title>
+    <meta name="twitter:" charset="utf-8">
+  </head>
+<body>
+  <script type="text/javascript">
+
+
+    const constantes = { central: 'Central',
+    franqueado: 'Franqueado',
+    centralfranqueado: 'Central Franqueado'}
+
+    const multiplo3 = (valor) => valor % 3 === 0 ? 'central' : ''
+    const multiplo5 = (valor) => valor % 5 === 0 ? 'franqueado' : ''
+
+    const printa = (valor) => constantes[multiplo3(valor) + multiplo5(valor)] || valor
+
+    for (let i = 0; i <= 100; i++) {
+      console.log(printa(i))
+}
+
+// for (let i = 0; i <= 100; i++) {
+// if (i % 3 == 0){
+// console.log("Central");
+// }else if (i % 5 == 0){
+// console.log("Franqueado");
+// }else if (i % 3 == 0 && i % 5 == 0){
+// console.log("Central do Franqueado")
+// }
+// else{
+// console.log(i);
+// }
+// }
+
+    </script>
+
+  </body>
+
+</html>
