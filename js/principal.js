@@ -11,9 +11,6 @@ for (let i = 0; i < pacientes.length; i++) {
   let tdAltura = pacientes[i].querySelector('.info-altura')
   let altura = tdAltura.textContent
 
-  let tdIMC = pacientes[i].querySelector('.info-imc')
-  let imc = tdIMC.textContent
-
   let pesoEValido = true
   let alturaEValida = true
 
@@ -32,7 +29,7 @@ for (let i = 0; i < pacientes.length; i++) {
   }
 
   // Se a altura e o peso forem validos então
-  // calculo do IMC sera feito.
+  // calcula o IMC.
   if (alturaEValida && pesoEValido) {
     let totalIMC = (peso / (altura * altura))
     let imc = pacientes[i].querySelector('.info-imc')
