@@ -30,5 +30,4 @@ botaoAdicionar.addEventListener('click', function (event) {
   let tabela = document.querySelector('#tabela-pacientes')
 
   tabela.appendChild(pacienteTr)
-
 })
