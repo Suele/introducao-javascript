@@ -31,8 +31,12 @@ for (let i = 0; i < pacientes.length; i++) {
   // Se a altura e o peso forem validos então
   // calcula o IMC.
   if (alturaEValida && pesoEValido) {
-    let totalIMC = (peso / (altura * altura))
     let imc = pacientes[i].querySelector('.info-imc')
-    imc.textContent = totalIMC.toFixed(2)
+    imc.textContent = calculaIMC(peso, altura)
   }
+}
+
+function calculaIMC (peso, altura) {
+  let totalIMC = (peso / (altura * altura))
+  return totalIMC.toFixed(2)
 }

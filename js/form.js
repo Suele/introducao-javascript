@@ -1,5 +1,4 @@
 let botaoAdicionar = document.querySelector('#adicionar-paciente')
-console.log(botaoAdicionar)
 
 botaoAdicionar.addEventListener('click', function (event) {
   event.preventDefault()
@@ -21,11 +20,13 @@ botaoAdicionar.addEventListener('click', function (event) {
   pesoTd.textContent = peso
   alturaTd.textContent = altura
   gorduraTd.textContent = gordura
+  imcTd.textContent = calculaIMC(peso, altura)
 
   pacienteTr.appendChild(nomeTd)
   pacienteTr.appendChild(pesoTd)
   pacienteTr.appendChild(alturaTd)
   pacienteTr.appendChild(gorduraTd)
+  pacienteTr.appendChild(imcTd)
 
   let tabela = document.querySelector('#tabela-pacientes')
 
