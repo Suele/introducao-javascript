@@ -5,7 +5,7 @@ botaoAdicionar.addEventListener('click', function (event) {
 
   let form = document.querySelector('#form-adiciona')
 
-  obtemValoresDoFormulario(form)
+  let paciente =  obtemValoresDoFormulario(form)
 
   let pacienteTr = document.createElement('tr')
   let nomeTd = document.createElement('td')
@@ -38,7 +38,8 @@ function obtemValoresDoFormulario (form) {
     nome: form.nome.value,
     peso: form.peso.value,
     altura: form.altura.value,
-    gordura: form.gordura.value
+    gordura: form.gordura.value,
+    imc = calculaIMC(peso, altura)
   }
   return paciente
 }
