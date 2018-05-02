@@ -52,9 +52,9 @@ section h2{
 }
 
 table{
-   width: 100%;
-   margin-bottom : .5em;
-   table-layout: fixed;
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
 
 }
 
@@ -126,13 +126,32 @@ button[disabled=disabled], button:disabled {
 }
 
 .adicionar-paciente{
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 .campo-invalido{
 	border: 1px solid red;
 }
 
-.paciente-invalido{
+.paciente-invalido {
 	background-color: lightcoral;
+}
+
+#mensagens-erro {
+	color: red;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela {
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+.invisivel {
+	display: none;
 }
